@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulir Pendaftaran Mahasiswa Baru STITEK</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI', sans-serif;
+    background:linear-gradient(135deg,#003366,#0077cc);
+    padding:30px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.25);
+}
+
+.header{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.logo img{
+    width:220px;
+    max-width:100%;
+    margin-bottom:10px;
+}
+
+.header h1{
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.header p{
+    font-size:15px;
+}
+
+.form-content{
+    padding:30px;
+}
+
+fieldset{
+    border:2px solid #0077cc;
+    border-radius:12px;
+    padding:20px;
+    margin-bottom:20px;
+}
+
+legend{
+    color:#003366;
+    font-weight:bold;
+    font-size:18px;
+    padding:0 10px;
+}
+
+label{
+    display:block;
+    margin-top:10px;
+    margin-bottom:5px;
+    font-weight:600;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:14px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus{
+    border-color:#0077cc;
+    outline:none;
+}
+
+.radio-group,
+.checkbox-group{
+    margin-top:10px;
+}
+
+.radio-group label,
+.checkbox-group label{
+    display:inline;
+    font-weight:normal;
+    margin-right:20px;
+}
+
+.btn-area{
+    text-align:center;
+    margin-top:20px;
+}
+
+button{
+    background:#0077cc;
+    color:white;
+    border:none;
+    padding:14px 35px;
+    font-size:16px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+button:hover{
+    background:#005fa3;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#f4f4f4;
+}
+
+footer a{
+    text-decoration:none;
+    color:#0077cc;
+    font-weight:bold;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <div class="logo">
+            <img src="logo.stitek.png" alt="Logo STITEK">
+        </div>
+
+        <h1>FORMULIR PENDAFTARAN MAHASISWA BARU</h1>
+
+        <p>
+            Silakan lengkapi data diri Anda dengan benar untuk proses administrasi akademik.
+        </p>
+    </div>
+
+    <div class="form-content">
+
+        <form>
+
+            <fieldset>
+                <legend>Data Pribadi</legend>
+
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" placeholder="Masukkan nama lengkap sesuai ijazah">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="contoh@stitek.ac.id">
+
+                <label>Jenis Kelamin</label>
+
+                <div class="radio-group">
+                    <input type="radio" id="pria" name="gender">
+                    <label for="pria">Pria</label>
+
+                    <input type="radio" id="wanita" name="gender">
+                    <label for="wanita">Wanita</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informasi Akademik & Minat</legend>
+
+                <label>Hobi</label>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="membaca">
+                    <label for="membaca">Membaca</label>
+
+                    <input type="checkbox" id="olahraga">
+                    <label for="olahraga">Olahraga</label>
+
+                    <input type="checkbox" id="musik">
+                    <label for="musik">Musik</label>
+                </div>
+
+                <label for="jurusan">Pilihan Jurusan</label>
+
+                <select id="jurusan">
+                    <option>-- Pilih Jurusan --</option>
+                    <option>Teknik Informatika</option>
+                    <option>Teknik Elektro</option>
+                    <option>Sistem Informasi</option>
+                    <option>Bisnis Digital</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Alamat Kontak</legend>
+
+                <label for="alamat">Alamat Lengkap</label>
+
+                <textarea id="alamat" rows="5" placeholder="Tuliskan alamat domisili saat ini..."></textarea>
+            </fieldset>
+
+            <div class="btn-area">
+                <button type="submit">Kirim Data</button>
+            </div>
+
+        </form>
+
+    </div>
+
+    <footer>
+        <p>
+            Butuh bantuan informasi pendaftaran?
+            <a href="https://stitek.ac.id/" target="_blank">
+                Website STITEK
+            </a>
+        </p>
+    </footer>
+
+</div>
+
+</body>
+</html>
